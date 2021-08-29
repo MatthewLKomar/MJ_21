@@ -7,8 +7,20 @@ public class MJ21 : ModuleRules
 	public MJ21(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+
+		PublicDependencyModuleNames.AddRange(
+					new string[] {
+				"Core",
+				"CoreUObject",
+				"Engine",
+				"InputCore",
+				"HeadMountedDisplay",
+				"ProceduralMeshComponent",
+				"GeometricObjects",
+				"DynamicMesh",
+				"RuntimeGeometryUtils",
+				"ModelingComponents"
+					});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
