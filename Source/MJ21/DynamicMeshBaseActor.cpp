@@ -1,10 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
-#include "ADynamicMeshActor.h"
+#include "DynamicMeshBaseActor.h"
 
 // Sets default values
-AADynamicMeshActor::AADynamicMeshActor()
+ADynamicMeshBaseActor::ADynamicMeshBaseActor()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -12,14 +11,20 @@ AADynamicMeshActor::AADynamicMeshActor()
 }
 
 // Called when the game starts or when spawned
-void AADynamicMeshActor::BeginPlay()
+void ADynamicMeshBaseActor::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
+void ADynamicMeshBaseActor::CopyFromMesh(ADynamicMeshBaseActor* OtherMesh, bool bRecomputeNormals)
+{
+
+
+}
+
 // Called every frame
-void AADynamicMeshActor::Tick(float DeltaTime)
+void ADynamicMeshBaseActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
