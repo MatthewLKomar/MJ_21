@@ -13,6 +13,16 @@
 			]
 		}
 	],
+	"Plugins": [
+		{
+			"Name": "DisasterRecoveryClient",
+			"Enabled": true
+		},
+		{
+			"Name": "FieldSystemPlugin",
+			"Enabled": true
+		}
+	],
 	"TargetPlatforms": [
 		"PS4",
 		"WindowsNoEditor"
